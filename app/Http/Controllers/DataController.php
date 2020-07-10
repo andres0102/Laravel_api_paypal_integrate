@@ -107,6 +107,7 @@ class DataController extends Controller
             // echo($data['api_key']); exit;
             Data_table::create([
                 'user_id' => $data['id'],
+                'client_id' => $data['c_id'],
                 'api_key' => $data['api_key'],
                 'secret_key' => $data['secret_key'],
             ]);
